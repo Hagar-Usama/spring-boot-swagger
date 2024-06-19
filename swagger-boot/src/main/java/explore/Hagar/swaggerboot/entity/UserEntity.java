@@ -4,9 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 
 @Entity
 @Table(name = "users", schema = "USER_APP")
+@Data
 public class UserEntity {
     @Id
     private Integer userID;

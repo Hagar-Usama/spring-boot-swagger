@@ -1,3 +1,4 @@
+
 package explore.Hagar.swaggerboot.controller;
 
 import java.util.List;
@@ -7,11 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import explore.Hagar.swaggerboot.entity.UserEntity;
 import explore.Hagar.swaggerboot.repo.UserRepo;
 
 @RestController
-@RequestMapping("/api/v2/users")
+@RequestMapping(value = "/api/v2/users")
+
 public class UserController {
 
     UserRepo userRepo;
